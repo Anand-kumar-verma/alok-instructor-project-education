@@ -76,12 +76,14 @@ export const UploadVideo = () => {
               className="w-full h-full object-cover"
             />
           ) : (
-            <p className="text-center text-[12px] text-gray-500">No image selected</p>
+            <p className="text-center text-[12px] text-gray-500">
+              No image selected
+            </p>
           )}
         </div>
       </div>
 
-      <form onSubmit={handleSubmit} className="mt-4">
+      <form onSubmit={handleSubmit} className="mt-4 !relative">
         {rows.map((row, index) => (
           <div
             key={index}
@@ -127,8 +129,8 @@ export const UploadVideo = () => {
             </div>
           </div>
         ))}
-        <div className="fixed bottom-0 w-[75%] bg-white p-4 border-t">
-          <div className="container mx-auto flex justify-between">
+        <div className="fixed bottom-0  p-4 border-t ">
+          <div className="container mx-auto flex gap-4">
             <button
               type="button"
               className="bg-gray-500 text-white px-4 py-2 rounded"
